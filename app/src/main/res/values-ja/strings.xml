@@ -25,4 +25,16 @@
     <string name="update">アップデート</string>
     <string name="update_downloading">アップデートをダウンロード中…</string>
     <string name="update_failed">もう一度アップデート</string>
+    <string name="connected_not_allowed_or_play">%1$s に接続しましたが、下の「許可」か「アプリ内でプレイ」を押すまで翻訳は表示されません</string>
+    <string name="play_inside">アプリ内でプレイ</string>
+    <string name="play_inside_why">許可は不要です。テレビの HDMI 入力のゲームをこのアプリ内で映し、その上に翻訳を表示します。</string>
+    <string name="no_hdmi">このデバイスには HDMI 入力がありません（テレビに挿すスティックやボックス）。そのためアプリ内でゲームを映せません。ここではオーバーレイのみ使えます。</string>
+    <string name="hdmi_input">入力: %1$s</string>
+    <string name="back_to_game">ゲームに戻る</string>
+    <string name="leave">終了</string>
+    <string name="back_again">もう一度「戻る」を押すと終了します</string>
+    <string name="no_picture">%1$s の映像がありません。ゲーム機の電源が入っていて、この入力につながっていますか？</string>
+    <string name="waiting_source">スマホまたは PC の VI Translator を待っています。アプリを開いたままにしてください。</string>
+    <string name="webview_how">Google Play で更新するか（「Android System WebView」を検索）、設定 › アプリ › Android System WebView で更新してから、このアプリを開き直してください。</string>
+    <string name="open_play">Google Play を開く</string>
 </resources>

@@ -25,4 +25,16 @@
     <string name="update">Aktualizovat</string>
     <string name="update_downloading">Stahování aktualizace…</string>
     <string name="update_failed">Zkusit aktualizaci znovu</string>
+    <string name="connected_not_allowed_or_play">Připojeno k %1$s, ale překlady se nezobrazí, dokud níže nestisknete Povolit nebo Hrát v aplikaci</string>
+    <string name="play_inside">Hrát v aplikaci</string>
+    <string name="play_inside_why">Bez oprávnění: hra ze vstupu HDMI televize běží v této aplikaci a překlady jsou přes ni.</string>
+    <string name="no_hdmi">Toto zařízení nemá vlastní vstup HDMI (je to stick nebo box připojený k televizi), takže hra v aplikaci běžet nemůže. Funguje zde jen překryv.</string>
+    <string name="hdmi_input">Vstup: %1$s</string>
+    <string name="back_to_game">Zpět do hry</string>
+    <string name="leave">Odejít</string>
+    <string name="back_again">Dalším stisknutím Zpět odejdete</string>
+    <string name="no_picture">Žádný obraz z %1$s. Je konzole zapnutá a připojená k tomuto vstupu?</string>
+    <string name="waiting_source">Čekání na VI Translator v telefonu nebo PC. Nechte aplikaci otevřenou.</string>
+    <string name="webview_how">Aktualizujte ji v Google Play (vyhledejte „Android System WebView“) nebo v Nastavení › Aplikace › Android System WebView a pak tuto aplikaci znovu otevřete.</string>
+    <string name="open_play">Otevřít Google Play</string>
 </resources>

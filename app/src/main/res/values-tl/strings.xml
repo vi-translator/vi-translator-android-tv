@@ -25,4 +25,16 @@
     <string name="update">I-update</string>
     <string name="update_downloading">Dina-download ang update…</string>
     <string name="update_failed">Subukan ulit ang update</string>
+    <string name="connected_not_allowed_or_play">Nakakonekta sa %1$s, pero hindi lalabas ang mga salin hangga\'t hindi mo pinipindot ang Payagan o Maglaro sa loob ng app sa ibaba</string>
+    <string name="play_inside">Maglaro sa loob ng app</string>
+    <string name="play_inside_why">Walang kailangang pahintulot: ang laro mula sa HDMI input ng TV ay tatakbo sa loob ng app na ito, kasama ang mga salin sa ibabaw nito.</string>
+    <string name="no_hdmi">Walang sariling HDMI input ang device na ito (isang stick o box na nakakabit sa TV), kaya hindi tatakbo ang laro sa loob ng app. Overlay lang ang gagana rito.</string>
+    <string name="hdmi_input">Input: %1$s</string>
+    <string name="back_to_game">Bumalik sa laro</string>
+    <string name="leave">Umalis</string>
+    <string name="back_again">Pindutin muli ang Back para umalis</string>
+    <string name="no_picture">Walang larawan mula sa %1$s. Nakabukas ba ang console at nakakabit sa input na ito?</string>
+    <string name="waiting_source">Hinihintay ang VI Translator sa iyong phone o PC. Panatilihing bukas ang app.</string>
+    <string name="webview_how">I-update ito sa Google Play (hanapin ang \"Android System WebView\"), o sa Settings › Apps › Android System WebView, pagkatapos ay buksan muli ang app na ito.</string>
+    <string name="open_play">Buksan ang Google Play</string>
 </resources>

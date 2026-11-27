@@ -25,4 +25,16 @@
     <string name="update">புதுப்பி</string>
     <string name="update_downloading">புதுப்பிப்பு பதிவிறக்கப்படுகிறது…</string>
     <string name="update_failed">மீண்டும் புதுப்பிக்க முயல்</string>
+    <string name="connected_not_allowed_or_play">%1$s உடன் இணைக்கப்பட்டது, ஆனால் கீழே உள்ள அனுமதி அல்லது ஆப்பிற்குள் விளையாடு என்பதை அழுத்தும் வரை மொழிபெயர்ப்புகள் தெரியாது</string>
+    <string name="play_inside">ஆப்பிற்குள் விளையாடு</string>
+    <string name="play_inside_why">அனுமதி தேவையில்லை: டிவியின் HDMI உள்ளீட்டில் உள்ள கேம் இந்த ஆப்பிற்குள் ஓடும், அதன் மேல் மொழிபெயர்ப்புகளுடன்.</string>
+    <string name="no_hdmi">இந்தச் சாதனத்திற்குச் சொந்த HDMI உள்ளீடு இல்லை (டிவியில் செருகிய ஸ்டிக் அல்லது பெட்டி), எனவே கேம் ஆப்பிற்குள் ஓட முடியாது. இங்கே மேலடுக்கு மட்டுமே வேலை செய்யும்.</string>
+    <string name="hdmi_input">உள்ளீடு: %1$s</string>
+    <string name="back_to_game">கேமிற்குத் திரும்பு</string>
+    <string name="leave">வெளியேறு</string>
+    <string name="back_again">வெளியேற மீண்டும் Back அழுத்தவும்</string>
+    <string name="no_picture">%1$s இலிருந்து படம் இல்லை. கன்சோல் இயக்கத்தில் உள்ளதா, இந்த உள்ளீட்டில் இணைக்கப்பட்டுள்ளதா?</string>
+    <string name="waiting_source">உங்கள் ஃபோன் அல்லது பிசியில் VI Translator-க்காகக் காத்திருக்கிறது. ஆப்பைத் திறந்தே வைத்திருங்கள்.</string>
+    <string name="webview_how">Google Play-இல் இதைப் புதுப்பிக்கவும் (\"Android System WebView\" எனத் தேடவும்), அல்லது அமைப்புகள் › ஆப்ஸ் › Android System WebView-இல், பிறகு இந்த ஆப்பை மீண்டும் திறக்கவும்.</string>
+    <string name="open_play">Google Play-ஐத் திற</string>
 </resources>

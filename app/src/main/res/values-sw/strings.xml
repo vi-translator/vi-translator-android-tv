@@ -25,4 +25,16 @@
     <string name="update">Sasisha</string>
     <string name="update_downloading">Inapakua sasisho…</string>
     <string name="update_failed">Jaribu kusasisha tena</string>
+    <string name="connected_not_allowed_or_play">Imeunganishwa na %1$s, lakini tafsiri hazitaonekana hadi ubonyeze Ruhusu au Cheza ndani ya programu hapa chini</string>
+    <string name="play_inside">Cheza ndani ya programu</string>
+    <string name="play_inside_why">Hakuna ruhusa inayohitajika: mchezo kutoka kwenye ingizo la HDMI la TV unacheza ndani ya programu hii, na tafsiri juu yake.</string>
+    <string name="no_hdmi">Kifaa hiki hakina ingizo lake la HDMI (ni kijiti au kisanduku kilichochomekwa kwenye TV), kwa hivyo mchezo hauwezi kucheza ndani ya programu. Hapa ni kiwekelezo pekee kinachofanya kazi.</string>
+    <string name="hdmi_input">Ingizo: %1$s</string>
+    <string name="back_to_game">Rudi kwenye mchezo</string>
+    <string name="leave">Ondoka</string>
+    <string name="back_again">Bonyeza Nyuma tena ili kuondoka</string>
+    <string name="no_picture">Hakuna picha kutoka %1$s. Je, konsoli imewashwa na imechomekwa kwenye ingizo hili?</string>
+    <string name="waiting_source">Inasubiri VI Translator kwenye simu au kompyuta yako. Acha programu ikiwa wazi.</string>
+    <string name="webview_how">Isasishe kwenye Google Play (tafuta \"Android System WebView\"), au kwenye Mipangilio › Programu › Android System WebView, kisha fungua programu hii tena.</string>
+    <string name="open_play">Fungua Google Play</string>
 </resources>

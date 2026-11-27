@@ -25,4 +25,16 @@
     <string name="update">Cập nhật</string>
     <string name="update_downloading">Đang tải bản cập nhật…</string>
     <string name="update_failed">Thử cập nhật lại</string>
+    <string name="connected_not_allowed_or_play">Đã kết nối với %1$s, nhưng bản dịch sẽ không hiện cho đến khi bạn nhấn Cho phép hoặc Chơi trong ứng dụng bên dưới</string>
+    <string name="play_inside">Chơi trong ứng dụng</string>
+    <string name="play_inside_why">Không cần quyền: trò chơi từ cổng HDMI của TV chạy ngay trong ứng dụng này, với bản dịch hiện bên trên.</string>
+    <string name="no_hdmi">Thiết bị này không có cổng HDMI riêng (là một thanh hoặc hộp cắm vào TV), nên trò chơi không thể chạy trong ứng dụng. Ở đây chỉ lớp phủ hoạt động được.</string>
+    <string name="hdmi_input">Cổng vào: %1$s</string>
+    <string name="back_to_game">Quay lại trò chơi</string>
+    <string name="leave">Thoát</string>
+    <string name="back_again">Nhấn Quay lại lần nữa để thoát</string>
+    <string name="no_picture">Không có hình từ %1$s. Máy chơi game đã bật và cắm vào cổng này chưa?</string>
+    <string name="waiting_source">Đang chờ VI Translator trên điện thoại hoặc PC của bạn. Hãy để ứng dụng mở.</string>
+    <string name="webview_how">Cập nhật trong Google Play (tìm \"Android System WebView\"), hoặc trong Cài đặt › Ứng dụng › Android System WebView, rồi mở lại ứng dụng này.</string>
+    <string name="open_play">Mở Google Play</string>
 </resources>

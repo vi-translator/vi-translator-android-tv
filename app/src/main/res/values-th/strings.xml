@@ -25,4 +25,16 @@
     <string name="update">อัปเดต</string>
     <string name="update_downloading">กำลังดาวน์โหลดอัปเดต…</string>
     <string name="update_failed">ลองอัปเดตอีกครั้ง</string>
+    <string name="connected_not_allowed_or_play">เชื่อมต่อกับ %1$s แล้ว แต่คำแปลจะไม่แสดงจนกว่าคุณจะกด อนุญาต หรือ เล่นในแอป ด้านล่าง</string>
+    <string name="play_inside">เล่นในแอป</string>
+    <string name="play_inside_why">ไม่ต้องขอสิทธิ์: เกมจากช่อง HDMI ของทีวีจะเล่นในแอปนี้ พร้อมคำแปลอยู่ด้านบน</string>
+    <string name="no_hdmi">อุปกรณ์นี้ไม่มีช่อง HDMI ของตัวเอง (เป็นสติ๊กหรือกล่องที่เสียบกับทีวี) จึงเล่นเกมในแอปไม่ได้ ที่นี่ใช้ได้เฉพาะการแสดงซ้อนเท่านั้น</string>
+    <string name="hdmi_input">ช่องสัญญาณ: %1$s</string>
+    <string name="back_to_game">กลับไปที่เกม</string>
+    <string name="leave">ออก</string>
+    <string name="back_again">กดย้อนกลับอีกครั้งเพื่อออก</string>
+    <string name="no_picture">ไม่มีภาพจาก %1$s คอนโซลเปิดอยู่และเสียบที่ช่องนี้หรือไม่</string>
+    <string name="waiting_source">กำลังรอ VI Translator บนโทรศัพท์หรือพีซีของคุณ เปิดแอปค้างไว้</string>
+    <string name="webview_how">อัปเดตใน Google Play (ค้นหา \"Android System WebView\") หรือใน การตั้งค่า › แอป › Android System WebView แล้วเปิดแอปนี้อีกครั้ง</string>
+    <string name="open_play">เปิด Google Play</string>
 </resources>

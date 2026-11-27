@@ -25,4 +25,16 @@
     <string name="update">Aktualisieren</string>
     <string name="update_downloading">Update wird heruntergeladen…</string>
     <string name="update_failed">Update erneut versuchen</string>
+    <string name="connected_not_allowed_or_play">Verbunden mit %1$s, aber Übersetzungen erscheinen erst, wenn du unten auf Erlauben oder In der App spielen drückst</string>
+    <string name="play_inside">In der App spielen</string>
+    <string name="play_inside_why">Ohne Berechtigung: Das Spiel vom HDMI-Eingang des Fernsehers läuft in dieser App, mit den Übersetzungen darüber.</string>
+    <string name="no_hdmi">Dieses Gerät hat keinen eigenen HDMI-Eingang (ein Stick oder eine Box am Fernseher), daher kann das Spiel nicht in der App laufen. Hier funktioniert nur das Overlay.</string>
+    <string name="hdmi_input">Eingang: %1$s</string>
+    <string name="back_to_game">Zurück zum Spiel</string>
+    <string name="leave">Verlassen</string>
+    <string name="back_again">Zum Verlassen erneut Zurück drücken</string>
+    <string name="no_picture">Kein Bild von %1$s. Ist die Konsole an und an diesem Eingang angeschlossen?</string>
+    <string name="waiting_source">Warte auf VI Translator auf deinem Handy oder PC. Lass die App geöffnet.</string>
+    <string name="webview_how">Aktualisiere es in Google Play (suche nach „Android System WebView“) oder unter Einstellungen › Apps › Android System WebView und öffne diese App dann erneut.</string>
+    <string name="open_play">Google Play öffnen</string>
 </resources>

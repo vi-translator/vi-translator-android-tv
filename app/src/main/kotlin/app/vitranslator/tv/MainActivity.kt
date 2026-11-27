@@ -16,6 +16,7 @@ import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.ScrollView
 import android.widget.TextView
 
 /**
@@ -35,10 +36,15 @@ class MainActivity : Activity() {
     private lateinit var showOn: Button
     private lateinit var disconnect: Button
     private lateinit var allow: Button
-    private lateinit var oldWebView: TextView
+    private lateinit var play: Button
+    private lateinit var playHere: Button
+    private lateinit var playWhy: TextView
+    private lateinit var oldWebView: LinearLayout
     private lateinit var language: Button
     private lateinit var update: Button
     private var inputs: List<Inputs.Input> = emptyList()
+    /** The HDMI inputs the game can play from inside the app (none on a stick or a box). */
+    private var hdmi: List<Inputs.Hdmi> = emptyList()
     private var resumed = false
     /** Whether "Display over other apps" was allowed at the last look (null: not looked yet). */
     private var wasAllowed: Boolean? = null
@@ -59,8 +65,16 @@ class MainActivity : Activity() {
         prefs = Prefs(this)
 
         val root = FrameLayout(this).apply { background = Look.background() }
-        val col = column()
-        root.addView(col, FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT, Gravity.CENTER))
+        // (scrolls when the cards don't fit: an old TV with no setting for the permission shows both)
+        val scroll = ScrollView(this).apply {
+            isFillViewport = true
+            isVerticalScrollBarEnabled = false
+        }
+        val centre = FrameLayout(this)
+        scroll.addView(centre, FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT))
+        root.addView(scroll, FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT))
+        val col = column().apply { setPadding(0, dp(24), 0, dp(24)) }
+        centre.addView(col, FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT, Gravity.CENTER))
 
         // the brand: logo and name in the sunset gradient, and the header's sunset line
         val brand = LinearLayout(this).apply {
@@ -104,8 +118,11 @@ class MainActivity : Activity() {
         }
         showOn = Look.button(this, "").apply { setOnClickListener { pickShowOn() } }
         disconnect = Look.button(this, getString(R.string.disconnect)).apply { setOnClickListener { disconnect() } }
+        // (an option where the overlay works too: on a TV with HDMI inputs)
+        play = Look.button(this, getString(R.string.play_inside)).apply { setOnClickListener { playInside() } }
         // (side gaps only: a top margin on a button in a centred row is counted twice and pushes it down)
         buttons.addView(showOn, wrap().apply { setMargins(dp(10), 0, dp(10), 0) })
+        buttons.addView(play, wrap().apply { setMargins(dp(10), 0, dp(10), 0) })
         buttons.addView(disconnect, wrap().apply { setMargins(dp(10), 0, dp(10), 0) })
         connected.addView(buttons, wrap().apply { topMargin = dp(30) })
         col.addView(connected, wrap())
@@ -116,19 +133,45 @@ class MainActivity : Activity() {
             setPadding(dp(28), dp(18), dp(28), dp(18))
         }
         permission.addView(Look.text(this, getString(R.string.permission_needed), 17f, 400, Look.WARN), wrap())
+        val ways = LinearLayout(this).apply {
+            orientation = LinearLayout.HORIZONTAL
+            gravity = Gravity.CENTER
+            isBaselineAligned = false
+            setPadding(dp(12), dp(8), dp(12), dp(8))
+            clipToPadding = false
+        }
         allow = Look.button(this, getString(R.string.allow)).apply { setOnClickListener { askPermission() } }
-        permission.addView(allow, wrap().apply { topMargin = dp(12) })
+        // or no permission at all: the game inside the app, from the TV's HDMI input
+        playHere = Look.button(this, getString(R.string.play_inside)).apply { setOnClickListener { playInside() } }
+        ways.addView(allow, wrap().apply { setMargins(dp(10), 0, dp(10), 0) })
+        ways.addView(playHere, wrap().apply { setMargins(dp(10), 0, dp(10), 0) })
+        permission.addView(ways, wrap().apply { topMargin = dp(4) })
+        // what Play inside the app is; or, on a device with no HDMI input, why there's only the overlay
+        playWhy = Look.text(this, "", 14f, 400, Look.TEXT).apply {
+            setPadding(0, dp(4), 0, 0)
+            maxWidth = dp(820)
+        }
+        permission.addView(playWhy, wrap())
         val adb = getString(R.string.adb_hint, adbCommand)
         permission.addView(Look.text(this, adb, 13f, 400, Look.MUTED).apply { setPadding(0, dp(12), 0, 0) }, wrap())
         col.addView(permission, wrap().apply { topMargin = dp(30) })
 
-        // a web engine too old to draw the PC's TV page (an old TV whose WebView was never updated)
-        oldWebView = Look.text(this, getString(R.string.webview_old), 17f, 400, Look.WARN).apply {
+        // a web engine too old to draw the PC's TV page (an old TV whose WebView was never updated):
+        // what to update, how, and its page on Google Play
+        val engine = Compat.webView(this)
+        oldWebView = column().apply {
             background = Look.card(this@MainActivity)
             setPadding(dp(28), dp(18), dp(28), dp(18))
-            val v = Compat.webViewVersion(this@MainActivity)
-            visibility = if (v in 1 until Compat.MIN_WEBVIEW) View.VISIBLE else View.GONE
+            visibility = if (engine.tooOld) View.VISIBLE else View.GONE
         }
+        oldWebView.addView(Look.text(this, getString(R.string.webview_old), 17f, 400, Look.WARN), wrap())
+        oldWebView.addView(Look.text(this, getString(R.string.webview_how), 14f, 400, Look.TEXT).apply { setPadding(0, dp(8), 0, 0) }, wrap())
+        // (the versions, which need no words: this TV's, and the one the page needs)
+        oldWebView.addView(Look.text(this, "Android System WebView ${engine.major} \u2192 ${Compat.MIN_WEBVIEW}+", 13f, 400, Look.MUTED).apply {
+            textDirection = View.TEXT_DIRECTION_LTR
+            setPadding(0, dp(6), 0, 0)
+        }, wrap())
+        oldWebView.addView(Look.button(this, getString(R.string.open_play)).apply { setOnClickListener { openWebViewStore(engine) } }, wrap().apply { topMargin = dp(12) })
         col.addView(oldWebView, wrap().apply { topMargin = dp(30) })
 
 
@@ -177,6 +220,7 @@ class MainActivity : Activity() {
         super.onResume()
         resumed = true
         inputs = Inputs.hdmi(this)
+        hdmi = Inputs.passthrough(this)
         render()
         main.post(tick)
         // (the code listener starts a moment after: the code shows as soon as it's there)
@@ -215,9 +259,10 @@ class MainActivity : Activity() {
             PairService.stop(this)
             showOn.visibility = if (inputs.isEmpty()) View.GONE else View.VISIBLE
             showOn.text = getString(R.string.show_on, showOnLabel())
+            play.visibility = if (hdmi.isEmpty()) View.GONE else View.VISIBLE
             // (not allowed: the Allow button first, or the player sees "connected" and nothing over the game)
             if (!Compat.canDrawOverlays(this)) allow.requestFocus()
-            else if (!disconnect.hasFocus() && !showOn.hasFocus()) (if (inputs.isEmpty()) disconnect else showOn).requestFocus()
+            else if (!disconnect.hasFocus() && !showOn.hasFocus() && !play.hasFocus()) (if (inputs.isEmpty()) disconnect else showOn).requestFocus()
         } else {
             thisTv.text = getString(R.string.this_tv, PairServer.deviceName(this))
             PairService.start(this)
@@ -230,6 +275,11 @@ class MainActivity : Activity() {
     private fun refresh() {
         val allowed = Compat.canDrawOverlays(this)
         permission.visibility = if (allowed) View.GONE else View.VISIBLE
+        // the way without the permission: once connected (it plays the game with the translations over it)
+        playHere.visibility = if (hdmi.isNotEmpty() && prefs.connected) View.VISIBLE else View.GONE
+        playWhy.visibility = if (prefs.connected) View.VISIBLE else View.GONE
+        playWhy.text = getString(if (hdmi.isEmpty()) R.string.no_hdmi else R.string.play_inside_why)
+        playWhy.setTextColor(if (hdmi.isEmpty()) Look.WARN else Look.TEXT)
         // just found not allowed (opened, back from Settings without allowing, or revoked meanwhile):
         // the remote on Allow. Only then, so it can still be moved to the other buttons.
         if (allowed != wasAllowed) {
@@ -250,7 +300,7 @@ class MainActivity : Activity() {
         }
         if (allowed && !OverlayService.running) OverlayService.start(this)
         val pc = prefs.pcName
-        val (color, text) = if (!allowed) Look.WARN to getString(R.string.connected_not_allowed, pc) else when (OverlayService.state) {
+        val (color, text) = if (!allowed) Look.WARN to getString(if (hdmi.isEmpty()) R.string.connected_not_allowed else R.string.connected_not_allowed_or_play, pc) else when (OverlayService.state) {
             Pc.State.OK -> Look.NEON to getString(R.string.connected_to, pc)
             Pc.State.OVERLAYS_OFF -> Look.WARN to getString(R.string.overlays_off, pc)
             else -> Look.ORANGE to getString(R.string.looking_for, pc)
@@ -330,6 +380,28 @@ class MainActivity : Activity() {
                     .show()
             }
         }
+    }
+
+    /** Play inside the app: the game from an HDMI input, in this app, with the translations over it. */
+    private fun playInside() {
+        startActivity(Intent(this, PlayerActivity::class.java))
+    }
+
+    /** The web engine's page on Google Play; without Google Play, how to update it. */
+    private fun openWebViewStore(engine: Compat.WebViewInfo) {
+        val id = Compat.webViewStoreId(engine)
+        for (u in listOf("market://details?id=$id", "https://play.google.com/store/apps/details?id=$id")) {
+            try {
+                startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(u)))
+                return
+            } catch (ignored: ActivityNotFoundException) {
+                // (no Google Play, or no browser: the next way)
+            }
+        }
+        AlertDialog.Builder(this, android.R.style.Theme_Material_Dialog_Alert)
+            .setMessage(getString(R.string.webview_how))
+            .setPositiveButton(android.R.string.ok, null)
+            .show()
     }
 
     /** Allows "Display over other apps" from a computer, on a TV with no page for it. */

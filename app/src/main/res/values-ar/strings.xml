@@ -25,4 +25,16 @@
     <string name="update">تحديث</string>
     <string name="update_downloading">جارٍ تنزيل التحديث…</string>
     <string name="update_failed">أعد محاولة التحديث</string>
+    <string name="connected_not_allowed_or_play">متصل بـ %1$s، لكن لن تظهر الترجمات حتى تضغط «السماح» أو «اللعب داخل التطبيق» في الأسفل</string>
+    <string name="play_inside">اللعب داخل التطبيق</string>
+    <string name="play_inside_why">دون أي إذن: تُعرض اللعبة من مدخل HDMI في التلفاز داخل هذا التطبيق، والترجمات فوقها.</string>
+    <string name="no_hdmi">لا يوجد في هذا الجهاز مدخل HDMI خاص به (عصا أو جهاز موصول بالتلفاز)، لذا لا يمكن تشغيل اللعبة داخل التطبيق. لا يعمل هنا إلا العرض فوق التطبيقات.</string>
+    <string name="hdmi_input">المدخل: %1$s</string>
+    <string name="back_to_game">العودة إلى اللعبة</string>
+    <string name="leave">خروج</string>
+    <string name="back_again">اضغط «رجوع» مرة أخرى للخروج</string>
+    <string name="no_picture">لا توجد صورة من %1$s. هل الجهاز يعمل وموصول بهذا المدخل؟</string>
+    <string name="waiting_source">بانتظار VI Translator على هاتفك أو الكمبيوتر. أبقِ التطبيق مفتوحًا.</string>
+    <string name="webview_how">حدّثه من Google Play (ابحث عن «Android System WebView»)، أو من الإعدادات › التطبيقات › Android System WebView، ثم افتح هذا التطبيق مجددًا.</string>
+    <string name="open_play">فتح Google Play</string>
 </resources>

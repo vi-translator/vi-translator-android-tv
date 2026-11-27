@@ -48,22 +48,36 @@ The overlay never takes the remote: it keeps working the TV and the game under i
    adb shell appops set app.vitranslator.tv SYSTEM_ALERT_WINDOW allow
    ```
 
+   Or, with no permission and no computer, press **Play inside the app**: the game from the TV's
+   HDMI input plays inside the app, with the translations over it (as in the webOS app). Pick the
+   console's input the first time. *Back* shows the app's panel; *Back* again (or *Leave*) leaves.
+   This needs a TV with HDMI inputs: a stick or a box plugged into a TV (Chromecast, Mi Stick) has
+   none, so only the overlay works there.
+
 Once connected, the app shows the connection and two buttons:
 
 - **Show on:** all inputs, or one HDMI input only (the console's): the overlay then hides on the
   home screen, in apps and on other inputs. Offered on TVs that tell apps which input is on screen
   (TCL); elsewhere the overlay shows everywhere.
+- **Play inside the app:** the same as above, where the overlay works too (on a TV with HDMI
+  inputs).
 - **Disconnect:** the TV forgets the PC (or phone) and shows a new code. Removing the TV in VI
   Translator on the PC or phone does the same.
 
 The overlay comes back by itself when the TV turns on, and finds the PC or phone again if the
 router gives it a new address.
 
+If the PC or phone stops answering (on an iPhone, iOS pauses VI Translator when another app such
+as PS Remote Play comes to the front), the TV shows a small note: keep VI Translator open on the
+phone or PC.
+
 ## Tips
 
 - Show the game full screen with no zoom or overscan (picture size *Auto* or *Just scan*), so the
   translations land where the PC or phone expects.
 - The text style, the language and what is read are all set in VI Translator on the PC or phone.
+- If the app says the TV's web engine is too old, update *Android System WebView* from Google Play
+  (or *Settings › Apps › Android System WebView*): the translations need version 84 or newer.
 
 ## Build
 
