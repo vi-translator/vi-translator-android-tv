@@ -7,6 +7,7 @@
     <string name="connected_to">Connected to %1$s</string>
     <string name="looking_for">Looking for %1$s…</string>
     <string name="overlays_off">Connected to %1$s, but its overlays are off</string>
+    <string name="connected_not_allowed_or_play">Connected to %1$s, but translations can\'t show until you press Allow or Play inside the app below</string>
     <string name="connected_not_allowed">Connected to %1$s, but translations can\'t show until you press Allow below</string>
     <string name="show_on">Show on: %1$s</string>
     <string name="all_inputs">All inputs</string>
@@ -19,6 +20,17 @@
     <string name="pair_notify">Waiting for VI Translator on your PC or phone to connect this TV</string>
     <string name="notify_channel">Overlay</string>
     <string name="notify_text">Showing the translations over the TV picture</string>
+    <string name="play_inside">Play inside the app</string>
+    <string name="play_inside_why">No permission needed: the game from the TV\'s HDMI input plays inside this app, with the translations over it.</string>
+    <string name="no_hdmi">This device has no HDMI input of its own (a stick or a box plugged into the TV), so the game can\'t play inside the app. Only the overlay can work here.</string>
+    <string name="hdmi_input">Input: %1$s</string>
+    <string name="back_to_game">Back to the game</string>
+    <string name="leave">Leave</string>
+    <string name="back_again">Press Back again to leave</string>
+    <string name="no_picture">No picture from %1$s. Is the console on, and plugged into this input?</string>
+    <string name="waiting_source">Waiting for VI Translator on your phone or PC. Keep the app open.</string>
+    <string name="webview_how">Update it in Google Play (search \"Android System WebView\"), or in Settings › Apps › Android System WebView, then open this app again.</string>
+    <string name="open_play">Open Google Play</string>
     <string name="webview_old">This TV\'s web engine is too old to draw the translations. Update \"Android System WebView\" from Google Play.</string>
     <string name="language">App language</string>
     <string name="language_tv">TV language</string>

@@ -25,4 +25,16 @@
     <string name="update">Aggiorna</string>
     <string name="update_downloading">Download dell\'aggiornamento…</string>
     <string name="update_failed">Riprova l\'aggiornamento</string>
+    <string name="connected_not_allowed_or_play">Connesso a %1$s, ma le traduzioni non appariranno finché non premi Consenti o Gioca nell\'app qui sotto</string>
+    <string name="play_inside">Gioca nell\'app</string>
+    <string name="play_inside_why">Nessun permesso: il gioco dall\'ingresso HDMI della TV va dentro questa app, con le traduzioni sopra.</string>
+    <string name="no_hdmi">Questo dispositivo non ha un ingresso HDMI suo (è una chiavetta o un box collegato alla TV), quindi il gioco non può andare dentro l\'app. Qui funziona solo la sovrapposizione.</string>
+    <string name="hdmi_input">Ingresso: %1$s</string>
+    <string name="back_to_game">Torna al gioco</string>
+    <string name="leave">Esci</string>
+    <string name="back_again">Premi di nuovo Indietro per uscire</string>
+    <string name="no_picture">Nessuna immagine da %1$s. La console è accesa e collegata a questo ingresso?</string>
+    <string name="waiting_source">In attesa di VI Translator sul telefono o sul PC. Tieni l\'app aperta.</string>
+    <string name="webview_how">Aggiornalo da Google Play (cerca \"Android System WebView\") o da Impostazioni › App › Android System WebView, poi riapri questa app.</string>
+    <string name="open_play">Apri Google Play</string>
 </resources>

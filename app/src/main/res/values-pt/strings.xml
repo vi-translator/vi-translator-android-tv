@@ -25,4 +25,16 @@
     <string name="update">Atualizar</string>
     <string name="update_downloading">A transferir a atualização…</string>
     <string name="update_failed">Tentar atualizar de novo</string>
+    <string name="connected_not_allowed_or_play">Ligado a %1$s, mas as traduções só aparecem depois de premir Permitir ou Jogar dentro da app abaixo</string>
+    <string name="play_inside">Jogar dentro da app</string>
+    <string name="play_inside_why">Sem permissões: o jogo da entrada HDMI da TV é mostrado dentro desta app, com as traduções por cima.</string>
+    <string name="no_hdmi">Este dispositivo não tem entrada HDMI própria (é uma pen ou uma box ligada à TV), por isso o jogo não pode ser mostrado dentro da app. Aqui só a sobreposição funciona.</string>
+    <string name="hdmi_input">Entrada: %1$s</string>
+    <string name="back_to_game">Voltar ao jogo</string>
+    <string name="leave">Sair</string>
+    <string name="back_again">Prima Voltar outra vez para sair</string>
+    <string name="no_picture">Sem imagem de %1$s. A consola está ligada e conectada a esta entrada?</string>
+    <string name="waiting_source">À espera do VI Translator no seu telemóvel ou PC. Mantenha a app aberta.</string>
+    <string name="webview_how">Atualize-o no Google Play (procure \"Android System WebView\") ou em Definições › Apps › Android System WebView e depois volte a abrir esta app.</string>
+    <string name="open_play">Abrir o Google Play</string>
 </resources>

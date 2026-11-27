@@ -25,4 +25,16 @@
     <string name="update">अपडेट करें</string>
     <string name="update_downloading">अपडेट डाउनलोड हो रहा है…</string>
     <string name="update_failed">अपडेट फिर से आज़माएँ</string>
+    <string name="connected_not_allowed_or_play">%1$s से जुड़ा है, लेकिन जब तक आप नीचे अनुमति दें या ऐप के अंदर खेलें नहीं दबाते, अनुवाद नहीं दिखेंगे</string>
+    <string name="play_inside">ऐप के अंदर खेलें</string>
+    <string name="play_inside_why">किसी अनुमति की ज़रूरत नहीं: टीवी के HDMI इनपुट का गेम इसी ऐप के अंदर चलता है, ऊपर अनुवाद के साथ।</string>
+    <string name="no_hdmi">इस डिवाइस का अपना कोई HDMI इनपुट नहीं है (टीवी में लगी स्टिक या बॉक्स), इसलिए गेम ऐप के अंदर नहीं चल सकता। यहाँ सिर्फ़ ओवरले काम करता है।</string>
+    <string name="hdmi_input">इनपुट: %1$s</string>
+    <string name="back_to_game">गेम पर वापस जाएँ</string>
+    <string name="leave">बाहर निकलें</string>
+    <string name="back_again">बाहर निकलने के लिए फिर से Back दबाएँ</string>
+    <string name="no_picture">%1$s से कोई तस्वीर नहीं। क्या कंसोल चालू है और इसी इनपुट में लगा है?</string>
+    <string name="waiting_source">आपके फ़ोन या पीसी पर VI Translator का इंतज़ार है। ऐप खुला रखें।</string>
+    <string name="webview_how">इसे Google Play में अपडेट करें (\"Android System WebView\" खोजें), या सेटिंग › ऐप › Android System WebView में, फिर यह ऐप दोबारा खोलें।</string>
+    <string name="open_play">Google Play खोलें</string>
 </resources>

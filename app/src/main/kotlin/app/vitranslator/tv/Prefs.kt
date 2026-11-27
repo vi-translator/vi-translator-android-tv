@@ -42,6 +42,11 @@ class Prefs(c: Context) {
         get() = p.getString("show_on", "") ?: ""
         set(deviceId) = p.edit().putString("show_on", deviceId).apply()
 
+    /** The HDMI input last played inside the app (its TV input id), or "" for none yet. */
+    var playInput: String
+        get() = p.getString("play_input", "") ?: ""
+        set(inputId) = p.edit().putString("play_input", inputId).apply()
+
     /** The app's language (a tag from Lang.ALL), or "" for the TV's own. */
     var language: String
         get() = p.getString("language", "") ?: ""

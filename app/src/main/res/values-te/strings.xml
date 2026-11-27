@@ -25,4 +25,16 @@
     <string name="update">అప్‌డేట్ చేయి</string>
     <string name="update_downloading">అప్‌డేట్ డౌన్‌లోడ్ అవుతోంది…</string>
     <string name="update_failed">మళ్లీ అప్‌డేట్ చేసి చూడండి</string>
+    <string name="connected_not_allowed_or_play">%1$sకి కనెక్ట్ అయింది, కానీ కింద ఉన్న అనుమతించు లేదా యాప్‌లోనే ఆడండి నొక్కే వరకు అనువాదాలు కనిపించవు</string>
+    <string name="play_inside">యాప్‌లోనే ఆడండి</string>
+    <string name="play_inside_why">ఏ అనుమతీ అవసరం లేదు: టీవీ HDMI ఇన్‌పుట్‌లోని గేమ్ ఈ యాప్‌లోనే నడుస్తుంది, దానిపై అనువాదాలతో.</string>
+    <string name="no_hdmi">ఈ పరికరానికి సొంత HDMI ఇన్‌పుట్ లేదు (టీవీకి పెట్టిన స్టిక్ లేదా బాక్స్), కాబట్టి గేమ్ యాప్‌లో నడవదు. ఇక్కడ ఓవర్‌లే మాత్రమే పనిచేస్తుంది.</string>
+    <string name="hdmi_input">ఇన్‌పుట్: %1$s</string>
+    <string name="back_to_game">గేమ్‌కి తిరిగి వెళ్లండి</string>
+    <string name="leave">నిష్క్రమించండి</string>
+    <string name="back_again">నిష్క్రమించడానికి మళ్లీ Back నొక్కండి</string>
+    <string name="no_picture">%1$s నుండి చిత్రం లేదు. కన్సోల్ ఆన్‌లో ఉందా, ఈ ఇన్‌పుట్‌కి కనెక్ట్ అయిందా?</string>
+    <string name="waiting_source">మీ ఫోన్ లేదా PCలో VI Translator కోసం వేచి ఉంది. యాప్‌ను తెరిచే ఉంచండి.</string>
+    <string name="webview_how">Google Playలో దీన్ని అప్‌డేట్ చేయండి (\"Android System WebView\" కోసం వెతకండి), లేదా సెట్టింగ్‌లు › యాప్‌లు › Android System WebViewలో, ఆపై ఈ యాప్‌ను మళ్లీ తెరవండి.</string>
+    <string name="open_play">Google Play తెరవండి</string>
 </resources>

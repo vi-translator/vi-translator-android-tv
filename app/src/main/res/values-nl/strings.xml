@@ -25,4 +25,16 @@
     <string name="update">Bijwerken</string>
     <string name="update_downloading">Update downloaden…</string>
     <string name="update_failed">Update opnieuw proberen</string>
+    <string name="connected_not_allowed_or_play">Verbonden met %1$s, maar vertalingen verschijnen pas als je hieronder op Toestaan of Spelen in de app drukt</string>
+    <string name="play_inside">Spelen in de app</string>
+    <string name="play_inside_why">Geen toestemming nodig: de game van de HDMI-ingang van de tv speelt in deze app, met de vertalingen erover.</string>
+    <string name="no_hdmi">Dit apparaat heeft geen eigen HDMI-ingang (een stick of kastje aan de tv), dus de game kan niet in de app spelen. Hier werkt alleen de overlay.</string>
+    <string name="hdmi_input">Ingang: %1$s</string>
+    <string name="back_to_game">Terug naar de game</string>
+    <string name="leave">Verlaten</string>
+    <string name="back_again">Druk nogmaals op Terug om te verlaten</string>
+    <string name="no_picture">Geen beeld van %1$s. Staat de console aan en zit hij op deze ingang?</string>
+    <string name="waiting_source">Wachten op VI Translator op je telefoon of pc. Houd de app open.</string>
+    <string name="webview_how">Werk het bij via Google Play (zoek op \'Android System WebView\') of via Instellingen › Apps › Android System WebView en open deze app daarna opnieuw.</string>
+    <string name="open_play">Google Play openen</string>
 </resources>

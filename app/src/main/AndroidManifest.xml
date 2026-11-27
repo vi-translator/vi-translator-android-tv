@@ -4,6 +4,8 @@
     <!-- a TV app: no touch screen, and it shows in the TV's launcher (also on phones, for testing) -->
     <uses-feature android:name="android.software.leanback" android:required="false" />
     <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <!-- TV inputs (HDMI), for "Play inside the app": used where there are, not required (sticks have none) -->
+    <uses-feature android:name="android.software.live_tv" android:required="false" />
 
     <!-- the PC app on the home network -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -18,6 +20,10 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <!-- updates from the app's releases: Android's installer asks to confirm each one -->
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- "Play inside the app" (an HDMI input played in a TvView) needs no permission; a few TVs ask
+         this one of an app that plays their inputs. Declaring it is harmless: nothing is asked of the
+         user, and the app reads no TV listings. -->
+    <uses-permission android:name="android.permission.READ_TV_LISTINGS" />
 
     <!-- usesCleartextTraffic: the PC app's page is plain HTTP on the home network -->
     <application
@@ -38,6 +44,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- "Play inside the app": the game from an HDMI input, with the translations over it -->
+        <activity
+            android:name=".PlayerActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
 
         <service
             android:name=".OverlayService"

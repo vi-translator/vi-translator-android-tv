@@ -25,4 +25,16 @@
     <string name="update">更新</string>
     <string name="update_downloading">正在下载更新…</string>
     <string name="update_failed">重试更新</string>
+    <string name="connected_not_allowed_or_play">已连接到 %1$s，但在你按下方的“允许”或“在应用内游玩”之前无法显示翻译</string>
+    <string name="play_inside">在应用内游玩</string>
+    <string name="play_inside_why">无需任何权限：电视 HDMI 输入的游戏画面在本应用内播放，翻译显示在上面。</string>
+    <string name="no_hdmi">此设备没有自己的 HDMI 输入（是插在电视上的电视棒或盒子），因此无法在应用内播放游戏。这里只能使用悬浮显示。</string>
+    <string name="hdmi_input">输入源：%1$s</string>
+    <string name="back_to_game">返回游戏</string>
+    <string name="leave">退出</string>
+    <string name="back_again">再按一次返回键退出</string>
+    <string name="no_picture">%1$s 没有画面。游戏机是否已开机并接在这个输入口上？</string>
+    <string name="waiting_source">正在等待你手机或电脑上的 VI Translator。请保持应用打开。</string>
+    <string name="webview_how">请在 Google Play 中更新（搜索“Android System WebView”），或在 设置 › 应用 › Android System WebView 中更新，然后重新打开本应用。</string>
+    <string name="open_play">打开 Google Play</string>
 </resources>

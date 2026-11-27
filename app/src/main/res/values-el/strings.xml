@@ -25,4 +25,16 @@
     <string name="update">Ενημέρωση</string>
     <string name="update_downloading">Λήψη της ενημέρωσης…</string>
     <string name="update_failed">Δοκίμασε ξανά την ενημέρωση</string>
+    <string name="connected_not_allowed_or_play">Συνδέθηκε με %1$s, αλλά οι μεταφράσεις δεν θα εμφανιστούν μέχρι να πατήσετε «Να επιτρέπεται» ή «Παιχνίδι μέσα στην εφαρμογή» παρακάτω</string>
+    <string name="play_inside">Παιχνίδι μέσα στην εφαρμογή</string>
+    <string name="play_inside_why">Χωρίς άδεια: το παιχνίδι από την είσοδο HDMI της τηλεόρασης παίζει μέσα σε αυτή την εφαρμογή, με τις μεταφράσεις από πάνω.</string>
+    <string name="no_hdmi">Αυτή η συσκευή δεν έχει δική της είσοδο HDMI (stick ή box συνδεδεμένο στην τηλεόραση), οπότε το παιχνίδι δεν μπορεί να παίξει μέσα στην εφαρμογή. Εδώ λειτουργεί μόνο η επικάλυψη.</string>
+    <string name="hdmi_input">Είσοδος: %1$s</string>
+    <string name="back_to_game">Πίσω στο παιχνίδι</string>
+    <string name="leave">Έξοδος</string>
+    <string name="back_again">Πατήστε ξανά Πίσω για έξοδο</string>
+    <string name="no_picture">Δεν υπάρχει εικόνα από %1$s. Είναι η κονσόλα ανοιχτή και συνδεδεμένη σε αυτή την είσοδο;</string>
+    <string name="waiting_source">Αναμονή για το VI Translator στο τηλέφωνο ή τον υπολογιστή σας. Κρατήστε την εφαρμογή ανοιχτή.</string>
+    <string name="webview_how">Ενημερώστε το στο Google Play (αναζητήστε «Android System WebView») ή στις Ρυθμίσεις › Εφαρμογές › Android System WebView και μετά ανοίξτε ξανά αυτή την εφαρμογή.</string>
+    <string name="open_play">Άνοιγμα Google Play</string>
 </resources>

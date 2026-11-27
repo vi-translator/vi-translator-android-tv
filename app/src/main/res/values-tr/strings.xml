@@ -25,4 +25,16 @@
     <string name="update">Güncelle</string>
     <string name="update_downloading">Güncelleme indiriliyor…</string>
     <string name="update_failed">Güncellemeyi yeniden dene</string>
+    <string name="connected_not_allowed_or_play">%1$s ile bağlantı kuruldu, ancak aşağıdaki İzin ver veya Uygulamada oyna düğmesine basana kadar çeviriler gösterilemez</string>
+    <string name="play_inside">Uygulamada oyna</string>
+    <string name="play_inside_why">İzin gerekmez: televizyonun HDMI girişindeki oyun bu uygulamanın içinde oynar, çeviriler üstünde.</string>
+    <string name="no_hdmi">Bu cihazın kendi HDMI girişi yok (televizyona takılı bir çubuk veya kutu), bu yüzden oyun uygulamanın içinde oynayamaz. Burada yalnızca katman çalışır.</string>
+    <string name="hdmi_input">Giriş: %1$s</string>
+    <string name="back_to_game">Oyuna dön</string>
+    <string name="leave">Çık</string>
+    <string name="back_again">Çıkmak için Geri\'ye tekrar basın</string>
+    <string name="no_picture">%1$s kaynağından görüntü yok. Konsol açık ve bu girişe takılı mı?</string>
+    <string name="waiting_source">Telefonunuzdaki veya bilgisayarınızdaki VI Translator bekleniyor. Uygulamayı açık tutun.</string>
+    <string name="webview_how">Google Play\'den güncelleyin (\"Android System WebView\" arayın) veya Ayarlar › Uygulamalar › Android System WebView\'dan güncelleyin, sonra bu uygulamayı yeniden açın.</string>
+    <string name="open_play">Google Play\'i aç</string>
 </resources>

@@ -25,4 +25,16 @@
     <string name="update">به‌روزرسانی</string>
     <string name="update_downloading">در حال دریافت به‌روزرسانی…</string>
     <string name="update_failed">دوباره به‌روزرسانی کنید</string>
+    <string name="connected_not_allowed_or_play">به %1$s متصل است، اما تا وقتی «اجازه دادن» یا «بازی داخل برنامه» را در پایین نزنید ترجمه‌ها نمایش داده نمی‌شوند</string>
+    <string name="play_inside">بازی داخل برنامه</string>
+    <string name="play_inside_why">بدون هیچ اجازه‌ای: بازی از ورودی HDMI تلویزیون داخل همین برنامه پخش می‌شود و ترجمه‌ها روی آن.</string>
+    <string name="no_hdmi">این دستگاه ورودی HDMI خودش را ندارد (یک دانگل یا باکس وصل‌شده به تلویزیون)، پس بازی نمی‌تواند داخل برنامه پخش شود. اینجا فقط نمایش روی برنامه‌ها کار می‌کند.</string>
+    <string name="hdmi_input">ورودی: %1$s</string>
+    <string name="back_to_game">بازگشت به بازی</string>
+    <string name="leave">خروج</string>
+    <string name="back_again">برای خروج دوباره «بازگشت» را بزنید</string>
+    <string name="no_picture">تصویری از %1$s نمی‌آید. آیا کنسول روشن است و به این ورودی وصل است؟</string>
+    <string name="waiting_source">در انتظار VI Translator روی گوشی یا کامپیوتر شما. برنامه را باز نگه دارید.</string>
+    <string name="webview_how">آن را از Google Play به‌روز کنید («Android System WebView» را جستجو کنید)، یا از تنظیمات › برنامه‌ها › Android System WebView، سپس این برنامه را دوباره باز کنید.</string>
+    <string name="open_play">باز کردن Google Play</string>
 </resources>

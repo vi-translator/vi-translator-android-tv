@@ -25,4 +25,16 @@
     <string name="update">Actualizează</string>
     <string name="update_downloading">Se descarcă actualizarea…</string>
     <string name="update_failed">Reîncearcă actualizarea</string>
+    <string name="connected_not_allowed_or_play">Conectat la %1$s, dar traducerile nu vor apărea până nu apeși mai jos Permite sau Joacă în aplicație</string>
+    <string name="play_inside">Joacă în aplicație</string>
+    <string name="play_inside_why">Fără permisiuni: jocul de pe intrarea HDMI a televizorului rulează în această aplicație, cu traducerile deasupra.</string>
+    <string name="no_hdmi">Acest dispozitiv nu are o intrare HDMI proprie (e un stick sau un box conectat la televizor), deci jocul nu poate rula în aplicație. Aici funcționează doar suprapunerea.</string>
+    <string name="hdmi_input">Intrare: %1$s</string>
+    <string name="back_to_game">Înapoi la joc</string>
+    <string name="leave">Ieși</string>
+    <string name="back_again">Apasă din nou Înapoi pentru a ieși</string>
+    <string name="no_picture">Nicio imagine de la %1$s. Consola e pornită și conectată la această intrare?</string>
+    <string name="waiting_source">Se așteaptă VI Translator de pe telefon sau PC. Ține aplicația deschisă.</string>
+    <string name="webview_how">Actualizează-l din Google Play (caută „Android System WebView”) sau din Setări › Aplicații › Android System WebView, apoi redeschide această aplicație.</string>
+    <string name="open_play">Deschide Google Play</string>
 </resources>

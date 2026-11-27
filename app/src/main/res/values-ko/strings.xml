@@ -25,4 +25,16 @@
     <string name="update">업데이트</string>
     <string name="update_downloading">업데이트 다운로드 중…</string>
     <string name="update_failed">업데이트 다시 시도</string>
+    <string name="connected_not_allowed_or_play">%1$s에 연결되었지만 아래의 허용 또는 앱 안에서 플레이를 누르기 전에는 번역이 표시되지 않습니다</string>
+    <string name="play_inside">앱 안에서 플레이</string>
+    <string name="play_inside_why">권한이 필요 없습니다: TV의 HDMI 입력 게임이 이 앱 안에서 재생되고, 그 위에 번역이 표시됩니다.</string>
+    <string name="no_hdmi">이 기기에는 자체 HDMI 입력이 없어서(TV에 꽂는 스틱이나 박스) 앱 안에서 게임을 재생할 수 없습니다. 여기서는 오버레이만 작동합니다.</string>
+    <string name="hdmi_input">입력: %1$s</string>
+    <string name="back_to_game">게임으로 돌아가기</string>
+    <string name="leave">나가기</string>
+    <string name="back_again">나가려면 뒤로를 한 번 더 누르세요</string>
+    <string name="no_picture">%1$s에서 화면이 없습니다. 콘솔이 켜져 있고 이 입력에 연결되어 있나요?</string>
+    <string name="waiting_source">휴대폰이나 PC의 VI Translator를 기다리는 중입니다. 앱을 열어 두세요.</string>
+    <string name="webview_how">Google Play에서 업데이트하거나(\'Android System WebView\' 검색) 설정 › 앱 › Android System WebView에서 업데이트한 뒤 이 앱을 다시 여세요.</string>
+    <string name="open_play">Google Play 열기</string>
 </resources>

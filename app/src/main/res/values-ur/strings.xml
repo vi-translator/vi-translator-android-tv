@@ -25,4 +25,16 @@
     <string name="update">اپ ڈیٹ کریں</string>
     <string name="update_downloading">اپ ڈیٹ ڈاؤن لوڈ ہو رہی ہے…</string>
     <string name="update_failed">دوبارہ اپ ڈیٹ کریں</string>
+    <string name="connected_not_allowed_or_play">%1$s سے منسلک ہے، لیکن جب تک آپ نیچے اجازت دیں یا ایپ کے اندر کھیلیں نہیں دبائیں گے ترجمے نظر نہیں آئیں گے</string>
+    <string name="play_inside">ایپ کے اندر کھیلیں</string>
+    <string name="play_inside_why">کسی اجازت کی ضرورت نہیں: ٹی وی کے HDMI ان پٹ کا گیم اسی ایپ کے اندر چلتا ہے، اوپر ترجموں کے ساتھ۔</string>
+    <string name="no_hdmi">اس ڈیوائس کا اپنا کوئی HDMI ان پٹ نہیں (ٹی وی میں لگی اسٹک یا باکس)، اس لیے گیم ایپ کے اندر نہیں چل سکتا۔ یہاں صرف اوورلے کام کرتا ہے۔</string>
+    <string name="hdmi_input">ان پٹ: %1$s</string>
+    <string name="back_to_game">گیم پر واپس جائیں</string>
+    <string name="leave">باہر نکلیں</string>
+    <string name="back_again">باہر نکلنے کے لیے دوبارہ Back دبائیں</string>
+    <string name="no_picture">%1$s سے کوئی تصویر نہیں۔ کیا کنسول آن ہے اور اسی ان پٹ میں لگا ہے؟</string>
+    <string name="waiting_source">آپ کے فون یا پی سی پر VI Translator کا انتظار ہے۔ ایپ کھلی رکھیں۔</string>
+    <string name="webview_how">اسے Google Play میں اپ ڈیٹ کریں (\"Android System WebView\" تلاش کریں)، یا سیٹنگز › ایپس › Android System WebView میں، پھر یہ ایپ دوبارہ کھولیں۔</string>
+    <string name="open_play">Google Play کھولیں</string>
 </resources>

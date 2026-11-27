@@ -25,4 +25,16 @@
     <string name="update">Обновить</string>
     <string name="update_downloading">Загрузка обновления…</string>
     <string name="update_failed">Повторить обновление</string>
+    <string name="connected_not_allowed_or_play">Подключено к %1$s, но переводы не появятся, пока вы не нажмёте ниже «Разрешить» или «Играть в приложении»</string>
+    <string name="play_inside">Играть в приложении</string>
+    <string name="play_inside_why">Без разрешений: игра со входа HDMI телевизора идёт внутри этого приложения, а переводы — поверх неё.</string>
+    <string name="no_hdmi">У этого устройства нет своего входа HDMI (это стик или приставка, подключённая к телевизору), поэтому игра не может идти внутри приложения. Здесь работает только наложение.</string>
+    <string name="hdmi_input">Вход: %1$s</string>
+    <string name="back_to_game">Вернуться к игре</string>
+    <string name="leave">Выйти</string>
+    <string name="back_again">Нажмите «Назад» ещё раз, чтобы выйти</string>
+    <string name="no_picture">Нет изображения с %1$s. Консоль включена и подключена к этому входу?</string>
+    <string name="waiting_source">Ожидание VI Translator на телефоне или ПК. Не закрывайте приложение.</string>
+    <string name="webview_how">Обновите его в Google Play (найдите «Android System WebView») или в Настройки › Приложения › Android System WebView, затем снова откройте это приложение.</string>
+    <string name="open_play">Открыть Google Play</string>
 </resources>

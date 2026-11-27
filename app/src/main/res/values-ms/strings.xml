@@ -25,4 +25,16 @@
     <string name="update">Kemas kini</string>
     <string name="update_downloading">Memuat turun kemas kini…</string>
     <string name="update_failed">Cuba kemas kini semula</string>
+    <string name="connected_not_allowed_or_play">Disambungkan ke %1$s, tetapi terjemahan tidak akan dipaparkan sehingga anda menekan Benarkan atau Main dalam aplikasi di bawah</string>
+    <string name="play_inside">Main dalam aplikasi</string>
+    <string name="play_inside_why">Tiada kebenaran diperlukan: permainan daripada input HDMI TV dimainkan dalam aplikasi ini, dengan terjemahan di atasnya.</string>
+    <string name="no_hdmi">Peranti ini tiada input HDMI sendiri (batang atau kotak yang dipasang pada TV), jadi permainan tidak boleh dimainkan dalam aplikasi. Hanya tindanan berfungsi di sini.</string>
+    <string name="hdmi_input">Input: %1$s</string>
+    <string name="back_to_game">Kembali ke permainan</string>
+    <string name="leave">Keluar</string>
+    <string name="back_again">Tekan Kembali sekali lagi untuk keluar</string>
+    <string name="no_picture">Tiada gambar daripada %1$s. Adakah konsol dihidupkan dan disambungkan ke input ini?</string>
+    <string name="waiting_source">Menunggu VI Translator pada telefon atau PC anda. Biarkan aplikasi terbuka.</string>
+    <string name="webview_how">Kemas kini dalam Google Play (cari \"Android System WebView\"), atau dalam Tetapan › Apl › Android System WebView, kemudian buka aplikasi ini semula.</string>
+    <string name="open_play">Buka Google Play</string>
 </resources>

@@ -29,8 +29,36 @@ object Inputs {
             // (the HDMI ports themselves, not the devices behind them that HDMI-CEC lists too)
             .filter { it.type == TvInputInfo.TYPE_HDMI && it.parentId == null }
             .mapNotNull { info ->
-                HW.find(info.id)?.let { m -> Input(m.groupValues[1], info.loadLabel(ctx)?.toString() ?: "HDMI") }
+                HW.find(info.id)?.let { m -> Input(m.groupValues[1], label(ctx, info)) }
             }
+    }
+
+    /** An HDMI input that can be played inside the app: its TV input id and its name on this TV. */
+    data class Hdmi(val id: String, val label: String)
+
+    /**
+     * The HDMI inputs this app can play itself (a TvView tuned to the input's passthrough channel,
+     * "Play inside the app"), in the TV's order. Empty on a device with no TV inputs: a stick or a
+     * box plugged into a TV (Chromecast, Mi Stick, Fire TV) has no HDMI input of its own.
+     */
+    fun passthrough(ctx: Context): List<Hdmi> {
+        val all = try {
+            (ctx.getSystemService(Context.TV_INPUT_SERVICE) as? TvInputManager)?.tvInputList
+        } catch (e: RuntimeException) {
+            null // (no TV input service on this device, or it failed)
+        } ?: return emptyList()
+        val hdmi = all.filter { it.isPassthroughInput && it.type == TvInputInfo.TYPE_HDMI }
+        // the HDMI ports themselves, not the devices behind them that HDMI-CEC lists too (with
+        // the port as their parent); those alone when the TV lists no port
+        val ports = hdmi.filter { it.parentId == null }.ifEmpty { hdmi }
+        return ports.map { Hdmi(it.id, label(ctx, it)) }
+    }
+
+    /** The input's name: the one the user gave it on the TV ("PS5"), else the TV's ("HDMI 3"). */
+    private fun label(ctx: Context, info: TvInputInfo): String = try {
+        info.loadCustomLabel(ctx)?.toString()?.takeIf { it.isNotBlank() } ?: info.loadLabel(ctx)?.toString()?.takeIf { it.isNotBlank() } ?: "HDMI"
+    } catch (e: RuntimeException) {
+        "HDMI"
     }
 
     /** The input on screen now: its device id, "" when none (home screen, an app), null when unknown. */
